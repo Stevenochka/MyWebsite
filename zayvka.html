@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="css/zayvka.css" />
+  </head>
+  <body>
+    <form
+      action="mail.php"
+      enctype="multipart/form-data"
+      class="form"
+      method="POST"
+    >
+      <input type="hidden" name="admin_email[]" value="sokorysha@gmail.com" />
+      <input type="hidden" name="form_subject" value="Тема письма" />
+      <h2>Отправка формы</h2>
+      <label class="form-label">
+        <span>Введите имя</span>
+        <input type="text" name="name" />
+      </label>
+      <label class="form-label">
+        <span>Введите телефон</span>
+        <input type="tel" data-validate-field="tel" name="tel" />
+      </label>
+      <label class="form-label">
+        <span>Введите email</span>
+        <input type="email" data-validate-field="email" name="email" />
+      </label>
+      <label class="form-label file-label">
+        <span>Прикрепить файл</span>
+        <input type="file" name="file[]" multiple />
+      </label>
+      <button type="submit">Отправить</button>
+    </form>
+    <div class="back">
+      <a href="index.html">Вернуться назад</a>
+    </div>
+    <script src="js/just-validate.min.js"></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>
