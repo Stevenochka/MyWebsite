@@ -1,0 +1,206 @@
+@import url("https://fonts.googleapis.com/css2?family=Didact+Gothic&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Didact+Gothic&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Didact+Gothic&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+.logo {
+  padding-top: 24px;
+  padding-left: 20px;
+}
+
+.menu {
+  padding: 34px 0px 23px;
+  background-color: none;
+}
+
+a {
+  text-decoration: none;
+  display: inline-block;
+  font-family: "Didact Gothic", sans-serif;
+}
+
+.header-content {
+  display: flex;
+  justify-content: space-between;
+}
+
+.menu li {
+  display: inline-block;
+}
+
+.menu a {
+  color: #323232;
+  font-size: 200%;
+  border: 1px solid transparent;
+  padding: 0px 16px;
+  transition: all 0.3s;
+}
+
+.menu a:hover {
+  border-color: #ffc222;
+}
+
+.menu li + li {
+  padding-left: 20px;
+}
+
+.slider {
+  margin-top: 10px;
+  background-image: url(city.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  min-height: 500px;
+}
+
+.slider-item-content {
+  text-align: center;
+  padding-top: 110px;
+  max-width: 665px;
+  margin: 0 auto;
+}
+
+.slider-title {
+  font-family: "Didact Gothic", sans-serif;
+  text-transform: uppercase;
+  font-size: 30px;
+  line-height: 36px;
+  color: #fff;
+  font-weight: 500;
+  letter-spacing: 1.5px;
+  margin-bottom: 22px;
+}
+
+.slider-text {
+  font-family: "Didact Gothic", sans-serif;
+  line-height: 24px;
+  font-size: 18px;
+  color: #ffffff;
+  margin-bottom: 50px;
+}
+
+.slider-btn {
+  font-size: 14px;
+  line-height: 24px;
+  color: #fff;
+  font-weight: 500;
+  font-family: "Didact Gothic", sans-serif;
+  padding: 8px 30px 8px 24px;
+  border: 1px solid #ffc222;
+}
+
+.slider-inner {
+  position: relative;
+}
+
+.slick-btn {
+  position: absolute;
+  top: 50%;
+  z-index: 3;
+  width: 40px;
+  height: 40px;
+  border: 1px solid #fff;
+  cursor: pointer;
+  outline: none;
+  background-color: #ffc222;
+}
+
+.slick-btn.slick-disabled {
+  cursor: default;
+  background-color: transparent;
+}
+
+.slick-btn::before {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-family: "icomoon";
+  color: #fff;
+}
+
+.slick-next::before {
+  content: "\ea34";
+}
+
+.slick-next {
+  right: 0;
+}
+
+.slick-prev::before {
+  content: "\ea38";
+}
+
+.slick-prev {
+  left: 0;
+}
+
+.footer-content {
+  background-color: #595959;
+  padding: 20px 0px 30px;
+}
+
+.footer-inner {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-map {
+  max-width: 630px;
+  padding-top: 10px;
+  margin-right: 50px;
+}
+
+/* .footer-map iframe {
+  width: 100%;
+  height: 250px;
+} */
+
+.footer-title {
+  font-family: "Didact Gothic", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  color: #fff;
+  line-height: 36px;
+  letter-spacing: 0.5px;
+  margin-left: 100px;
+}
+
+.footer-text {
+  color: #d3d2d2;
+  margin-bottom: 20px;
+  margin-left: 100px;
+}
+
+.footer-info {
+  max-width: 500px;
+}
+
+.footer-list li {
+  margin-top: 10px;
+}
+
+.footer-list a {
+  color: #fff;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0.25px;
+  margin-left: 100px;
+  font-weight: 400;
+  font-family: "Didact Gothic", sans-serif;
+}
+
+.footer-copy {
+  background-color: #303030;
+  text-align: center;
+  font-size: 12px;
+  line-height: 24px;
+  padding: 8px 0;
+  font-weight: 400;
+  font-family: "Didact Gothic", sans-serif;
+  color: #887575;
+}
